@@ -11,39 +11,20 @@ public class Character : MonoBehaviour
     [SerializeField] private FlagRegistry m_flagRegistry;
 
     [Header("Debug")]
-    [SerializeField] private DirectionalArrow m_leftArrow;
-    [SerializeField] private DirectionalArrow m_rightArrow;
-    [SerializeField] private DirectionalArrow m_upArrow;
-    [SerializeField] private DirectionalArrow m_downArrow;
+    [SerializeField] private DirectionalArrow m_debugDirectionalArrow;
 
     public EMovementDirection CurrentDirection => m_currentDirection;
 
     public UnityEvent<Flag> FlagReachedEvent = new UnityEvent<Flag>();
 
     private EMovementDirection m_targetDirection = EMovementDirection.None;
-    // private EMovementDirection m_lastValidDirection = EMovementDirection.None;
     private EMovementDirection m_currentDirection = EMovementDirection.None;
 
     private Flag m_currentFlag = null;
 
     public void SetTargetDirection(EMovementDirection direction)
     {
-        m_leftArrow.SetState(
-            direction == EMovementDirection.Left ? DirectionalArrow.EState.Selected :
-            DirectionalArrow.EState.Unselected);
-
-        m_rightArrow.SetState(
-            direction == EMovementDirection.Right ? DirectionalArrow.EState.Selected :
-            DirectionalArrow.EState.Unselected);
-
-        m_downArrow.SetState(
-            direction == EMovementDirection.Down ? DirectionalArrow.EState.Selected :
-            DirectionalArrow.EState.Unselected);
-
-        m_upArrow.SetState(
-            direction == EMovementDirection.Up ? DirectionalArrow.EState.Selected :
-            DirectionalArrow.EState.Unselected);
-
+        m_debugDirectionalArrow.SetDirection(direction);
         m_targetDirection = direction;
     }
 
@@ -72,7 +53,6 @@ public class Character : MonoBehaviour
         {
             if (m_currentFlag.CanMoveInDirection(m_targetDirection))
             {
-                // m_lastValidDirection = m_targetDirection;
                 m_currentDirection = m_targetDirection;
                 m_currentFlag = null;
             }

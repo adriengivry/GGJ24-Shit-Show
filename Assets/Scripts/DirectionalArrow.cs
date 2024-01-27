@@ -2,44 +2,24 @@ using UnityEngine;
 
 public class DirectionalArrow : MonoBehaviour
 {
-    [SerializeField] private SpriteRenderer m_spriteRenderer;
-    [SerializeField] private Color m_unselectedColor;
-    [SerializeField] private Color m_selectedColor;
-    [SerializeField] private Color m_blockedColor;
+    [SerializeField] private GameObject m_arrowVisual;
 
-    private EState m_state;
-
-    public enum EState
+    public void SetDirection(EMovementDirection direction)
     {
-        Hidden,
-        Unselected,
-        Selected,
-        Blocked
+        m_arrowVisual.SetActive(direction != EMovementDirection.None);
+        transform.rotation = Quaternion.Euler(0.0f, 0.0f, GetAngleFromDirection(direction));
     }
 
-    public void SetState(EState state)
+    private float GetAngleFromDirection(EMovementDirection direction)
     {
-        m_state = state;
-        switch (state)
+        switch (direction)
         {
-            case EState.Hidden:
-                m_spriteRenderer.enabled = false;
-                break;
-
-            case EState.Selected:
-                m_spriteRenderer.enabled = true;
-                m_spriteRenderer.color = m_selectedColor;
-                break;
-
-            case EState.Unselected:
-                m_spriteRenderer.enabled = true;
-                m_spriteRenderer.color = m_unselectedColor;
-                break;
-
-            case EState.Blocked:
-                m_spriteRenderer.enabled = true;
-                m_spriteRenderer.color = m_blockedColor;
-                break;
+            case EMovementDirection.Up: return 0.0f;
+            case EMovementDirection.Right: return -90.0f;
+            case EMovementDirection.Down: return -180.0f;
+            case EMovementDirection.Left: return 90.0f;
         }
+
+        return 0.0f;
     }
 }
