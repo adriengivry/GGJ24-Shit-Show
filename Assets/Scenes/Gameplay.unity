@@ -2103,18 +2103,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ---- VFX ----
       objectReference: {fileID: 0}
-    - target: {fileID: 6281938421253119477, guid: 4d27ea35b765f1749ae8ed145d4ad5f8, type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6281938421253119477, guid: 4d27ea35b765f1749ae8ed145d4ad5f8, type: 3}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6281938421253119477, guid: 4d27ea35b765f1749ae8ed145d4ad5f8, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8637937791036879392, guid: 4d27ea35b765f1749ae8ed145d4ad5f8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
