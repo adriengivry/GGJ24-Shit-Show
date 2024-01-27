@@ -8,7 +8,11 @@ public class PlayerController : MonoBehaviour
 
     public void OnMove(InputAction.CallbackContext context)
     {
-        if (m_gameManager.CurrentState == EGameState.Gameplay)
+        if (m_gameManager.CurrentState == EGameState.Intro)
+        {
+            m_gameManager.SkipIntro();
+        }
+        else if (m_gameManager.CurrentState == EGameState.Gameplay)
         {
             var directionVector = context.ReadValue<Vector2>();
             EMovementDirection direction = MovementUtils.DirectionVectorToEnum(directionVector);
@@ -25,7 +29,11 @@ public class PlayerController : MonoBehaviour
     {
         if (context.performed)
         {
-            if (m_gameManager.CurrentState == EGameState.Gameplay || m_gameManager.CurrentState == EGameState.Shooting)
+            if (m_gameManager.CurrentState == EGameState.Intro)
+            {
+                m_gameManager.SkipIntro();
+            }
+            else if (m_gameManager.CurrentState == EGameState.Gameplay || m_gameManager.CurrentState == EGameState.Shooting)
             {
                 m_gameManager.ToggleShooting();
             }

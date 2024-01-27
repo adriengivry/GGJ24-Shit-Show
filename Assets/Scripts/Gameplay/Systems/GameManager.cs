@@ -43,6 +43,13 @@ public class GameManager : MonoBehaviour
         PushState(m_initialGameState);
     }
 
+    public void SkipIntro()
+    {
+        Debug.Assert(m_gameStateLayers.TryPeek(out var layer) && layer == EGameState.Intro, "Cannot invoke SkipIntro if the intro is not the current game state");
+        PopState();
+        PushState(EGameState.Gameplay);
+    }
+
     public void TogglePause()
     {
         if (m_gameStateLayers.TryPeek(out var layer) && layer == EGameState.Pause)
