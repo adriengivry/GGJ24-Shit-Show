@@ -33,14 +33,22 @@ public class AIController : MonoBehaviour
 
     private EMovementDirection GetRandomDirection(HashSet<EMovementDirection> directions)
     {
+        if (directions.Count == 1)
+        {
+            return directions.First();
+        }
+
+        // If more than one direction is available, make sure to always avoid going back on your steps
+        var filteredDirections = directions.Where(dir => !MovementUtils.AreOppositeDirections(dir, m_character.CurrentDirection));
+
         // Check if the HashSet is not empty
-        if (directions.Count > 0)
+        if (filteredDirections.Count() > 0)
         {
             // Get a random index within the HashSet's count
-            int randomIndex = UnityEngine.Random.Range(0, directions.Count);
+            int randomIndex = UnityEngine.Random.Range(0, filteredDirections.Count());
 
             // Use an extension method to get the element at the random index
-            EMovementDirection randomDirection = directions.ElementAt(randomIndex);
+            EMovementDirection randomDirection = filteredDirections.ElementAt(randomIndex);
 
             return randomDirection;
         }

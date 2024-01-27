@@ -16,6 +16,8 @@ public class Character : MonoBehaviour
     [SerializeField] private DirectionalArrow m_upArrow;
     [SerializeField] private DirectionalArrow m_downArrow;
 
+    public EMovementDirection CurrentDirection => m_currentDirection;
+
     public UnityEvent<Flag> FlagReachedEvent = new UnityEvent<Flag>();
 
     private EMovementDirection m_targetDirection = EMovementDirection.None;
