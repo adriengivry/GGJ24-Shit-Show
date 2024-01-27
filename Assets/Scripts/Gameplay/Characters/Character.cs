@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.InputSystem;
+
 public class Character : MonoBehaviour
 {
     [Header("Settings")]
@@ -29,42 +29,47 @@ public class Character : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (m_targetDirection != EMovementDirection.None &&
-            (m_currentDirection == EMovementDirection.None || MovementUtils.AreOppositeDirections(m_targetDirection, m_currentDirection)))
+        if (GameManager.Instance.CurrentState == EGameState.Gameplay || GameManager.Instance.CurrentState == EGameState.Shooting)
         {
-            m_currentDirection = m_targetDirection;
-        }
-
-        // Check if the character is close to a flag
-        if (!m_currentFlag && GameManager.Instance.FlagRegistry.TryGetFlagAtPosition(transform.position, m_rigidbody.velocity, out Flag flag))
-        {
-            if (flag != m_currentFlag)
-            {
-                m_currentFlag = flag;
-
-                // Snap the character position to the flag position (Make sure the player is always properly aligned with flags)
-                m_rigidbody.MovePosition(flag.transform.position);
-
-                FlagReachedEvent.Invoke(flag);
-            }
-        }
-        else if (m_currentFlag)
-        {
-            if (m_currentFlag.CanMoveInDirection(m_targetDirection))
+            if (m_targetDirection != EMovementDirection.None &&
+                (m_currentDirection == EMovementDirection.None || MovementUtils.AreOppositeDirections(m_targetDirection, m_currentDirection)))
             {
                 m_currentDirection = m_targetDirection;
-                m_currentFlag = null;
             }
-            else
+
+            // Check if the character is close to a flag
+            if (!m_currentFlag && GameManager.Instance.FlagRegistry.TryGetFlagAtPosition(transform.position, m_rigidbody.velocity, out Flag flag))
             {
-                m_currentDirection = EMovementDirection.None;
+                if (flag != m_currentFlag)
+                {
+                    m_currentFlag = flag;
+
+                    // Snap the character position to the flag position (Make sure the player is always properly aligned with flags)
+                    m_rigidbody.MovePosition(flag.transform.position);
+
+                    FlagReachedEvent.Invoke(flag);
+                }
             }
+            else if (m_currentFlag)
+            {
+                if (m_currentFlag.CanMoveInDirection(m_targetDirection))
+                {
+                    m_currentDirection = m_targetDirection;
+                    m_currentFlag = null;
+                }
+                else
+                {
+                    m_currentDirection = EMovementDirection.None;
+                }
+            }
+
+            Vector2 directionVector = MovementUtils.DirectionEnumToVector(m_currentDirection);
+
+            m_rigidbody.velocity = directionVector * m_moveSpeed;
         }
-
-        // Update current direction when approaching an intersection
-
-        Vector2 directionVector = MovementUtils.DirectionEnumToVector(m_currentDirection);
-
-        m_rigidbody.velocity = directionVector * m_moveSpeed;
+        else
+        {
+            m_rigidbody.velocity = Vector2.zero;
+        }
     }
 }
