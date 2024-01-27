@@ -50,6 +50,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_initialGameState: 1
+  m_flagRegistry: {fileID: 3310643513221029110}
   m_gameStates:
     _serializedList:
     - Key: 0
@@ -108,7 +109,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_gameManager: {fileID: 5838181885237909324}
-  m_character: {fileID: 0}
 --- !u!114 &8284084829368847317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -302,6 +302,7 @@ Transform:
   m_Children:
   - {fileID: 3069753789623913372}
   - {fileID: 4928036764350406255}
+  - {fileID: 1934221011821666297}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5956851041384789043
@@ -392,6 +393,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b50ea907aea91e499d0199fb3b6c9af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &7529024128459342735
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1934221011821666297}
+  - component: {fileID: 3310643513221029110}
+  m_Layer: 0
+  m_Name: Flag Registry
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1934221011821666297
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7529024128459342735}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4228819345249305179}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3310643513221029110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7529024128459342735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3be855898d77caf4e84782a429f0f39f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_positionDetectionThreshold: 0.2
 --- !u!1 &7796514627626779962
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,6 +483,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_timeScale: 0.25
+  m_fillSpeed: 5
+  m_marginOfError: 0.06
+  m_throwDestination: {fileID: 0}
+  m_throwable: {fileID: 0}
   m_shootingUI: {fileID: 0}
 --- !u!1 &9143274200804812442
 GameObject:

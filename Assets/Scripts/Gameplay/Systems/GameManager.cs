@@ -17,14 +17,29 @@ public class GameManager : MonoBehaviour
     [SerializeField] private EGameState m_initialGameState;
 
     [Header("References")]
+    [SerializeField] private FlagRegistry m_flagRegistry;
     [SerializeField] private SerializedDictionary<EGameState, AGameState> m_gameStates;
+
+    public static GameManager Instance => m_instance;
+
+    public Character Player => m_player;
+    public FlagRegistry FlagRegistry => m_flagRegistry;
 
     public EGameState CurrentState => m_gameStateLayers.Peek();
 
     private Stack<EGameState> m_gameStateLayers = new Stack<EGameState>();
 
+    private GameObject FindPlayerGameObject() => GameObject.FindGameObjectWithTag("Player");
+    private Character m_player;
+
+    private static GameManager m_instance = null;
+
     private void Awake()
     {
+        m_instance = this;
+        GameObject playerGameObject = FindPlayerGameObject();
+        m_player = playerGameObject?.GetComponent<Character>();
+        Debug.Assert(m_player != null, "No player has been found! Make sure to add the Player prefab in your scene.");
         PushState(m_initialGameState);
     }
 

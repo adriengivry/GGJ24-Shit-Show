@@ -8,7 +8,6 @@ public class Character : MonoBehaviour
 
     [Header("References")]
     [SerializeField] private Rigidbody2D m_rigidbody;
-    [SerializeField] private FlagRegistry m_flagRegistry;
 
     [Header("Debug")]
     [SerializeField] private DirectionalArrow m_debugDirectionalArrow;
@@ -37,7 +36,7 @@ public class Character : MonoBehaviour
         }
 
         // Check if the character is close to a flag
-        if (!m_currentFlag && m_flagRegistry.TryGetFlagAtPosition(transform.position, m_rigidbody.velocity, out Flag flag))
+        if (!m_currentFlag && GameManager.Instance.FlagRegistry.TryGetFlagAtPosition(transform.position, m_rigidbody.velocity, out Flag flag))
         {
             if (flag != m_currentFlag)
             {

@@ -5,7 +5,6 @@ public class PlayerController : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private GameManager m_gameManager;
-    [SerializeField] private Character m_character;
 
     public void OnMove(InputAction.CallbackContext context)
     {
@@ -17,21 +16,27 @@ public class PlayerController : MonoBehaviour
             // During gameplay, we can't go back to no direction, there is always a set direction
             if (direction != EMovementDirection.None)
             {
-                m_character.SetTargetDirection(direction);
+                m_gameManager.Player.SetTargetDirection(direction);
             }
         }
     }
 
     public void OnFire(InputAction.CallbackContext context)
     {
-        if (m_gameManager.CurrentState == EGameState.Gameplay || m_gameManager.CurrentState == EGameState.Shooting)
+        if (context.performed)
         {
-            m_gameManager.ToggleShooting();
+            if (m_gameManager.CurrentState == EGameState.Gameplay || m_gameManager.CurrentState == EGameState.Shooting)
+            {
+                m_gameManager.ToggleShooting();
+            }
         }
     }
 
     public void OnPause(InputAction.CallbackContext context)
     {
-        m_gameManager.TogglePause();
+        if (context.performed)
+        {
+            m_gameManager.TogglePause();
+        }
     }
 }
