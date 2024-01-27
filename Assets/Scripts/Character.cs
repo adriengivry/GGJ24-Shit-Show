@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 public class Character : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class Character : MonoBehaviour
     [SerializeField] private DirectionalArrow m_rightArrow;
     [SerializeField] private DirectionalArrow m_upArrow;
     [SerializeField] private DirectionalArrow m_downArrow;
+
+    public UnityEvent<Flag> FlagReachedEvent = new UnityEvent<Flag>();
 
     private EMovementDirection m_targetDirection = EMovementDirection.None;
     private EMovementDirection m_lastValidDirection = EMovementDirection.None;
@@ -55,6 +58,8 @@ public class Character : MonoBehaviour
             {
                 // Snap the character position to the flag position (Make sure the player is always properly aligned with flags)
                 m_rigidbody.MovePosition(flag.transform.position);
+
+                FlagReachedEvent.Invoke(flag);
 
                 if (flag.CanMoveInDirection(m_targetDirection) && !MovementUtils.AreOppositeDirections(m_targetDirection, m_lastValidDirection))
                 {

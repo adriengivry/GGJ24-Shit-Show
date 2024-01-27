@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Flag : MonoBehaviour
 {
+    public HashSet<EMovementDirection> AllowedDirections => m_allowedDirections;
+
     private HashSet<EMovementDirection> m_allowedDirections;
 
     public bool CanMoveInDirection(EMovementDirection direction)
