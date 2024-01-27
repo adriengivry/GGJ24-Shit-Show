@@ -12,11 +12,14 @@ public class FlagRegistry : MonoBehaviour
         m_flags = FindObjectsOfType<Flag>();
     }
 
-    public bool TryGetFlagAtPosition(Vector2 position, out Flag foundFlag)
+    public bool TryGetFlagAtPosition(Vector2 position, Vector2 direction, out Flag foundFlag)
     {
         foreach (Flag flag in m_flags)
         {
-            if (Vector3.Distance(position, flag.transform.position) <= m_positionDetectionThreshold)
+            Vector2 flagDirection = (new Vector2(flag.transform.position.x, flag.transform.position.y) - position).normalized;
+            float dotProduct = Vector2.Dot(flagDirection, direction);
+
+            if (dotProduct > 0 && Vector3.Distance(position, flag.transform.position) <= m_positionDetectionThreshold)
             {
                 foundFlag = flag;
                 return true;

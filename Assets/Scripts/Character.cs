@@ -19,9 +19,10 @@ public class Character : MonoBehaviour
     public UnityEvent<Flag> FlagReachedEvent = new UnityEvent<Flag>();
 
     private EMovementDirection m_targetDirection = EMovementDirection.None;
-    private EMovementDirection m_lastValidDirection = EMovementDirection.None;
+    // private EMovementDirection m_lastValidDirection = EMovementDirection.None;
     private EMovementDirection m_currentDirection = EMovementDirection.None;
-    private Flag m_lastFlag = null;
+
+    private Flag m_currentFlag = null;
 
     public void SetTargetDirection(EMovementDirection direction)
     {
@@ -44,63 +45,45 @@ public class Character : MonoBehaviour
         m_targetDirection = direction;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        if (m_targetDirection != EMovementDirection.None && m_currentDirection == EMovementDirection.None)
+        if (m_targetDirection != EMovementDirection.None &&
+            (m_currentDirection == EMovementDirection.None || MovementUtils.AreOppositeDirections(m_targetDirection, m_currentDirection)))
         {
             m_currentDirection = m_targetDirection;
         }
 
         // Check if the character is close to a flag
-        if (m_flagRegistry.TryGetFlagAtPosition(transform.position, out Flag flag))
+        if (!m_currentFlag && m_flagRegistry.TryGetFlagAtPosition(transform.position, m_rigidbody.velocity, out Flag flag))
         {
-            if (flag != m_lastFlag)
+            if (flag != m_currentFlag)
             {
+                m_currentFlag = flag;
+
                 // Snap the character position to the flag position (Make sure the player is always properly aligned with flags)
                 m_rigidbody.MovePosition(flag.transform.position);
 
                 FlagReachedEvent.Invoke(flag);
-
-                if (flag.CanMoveInDirection(m_targetDirection) && !MovementUtils.AreOppositeDirections(m_targetDirection, m_lastValidDirection))
-                {
-                    m_lastValidDirection = m_targetDirection;
-                    m_currentDirection = m_targetDirection;
-                    m_lastFlag = flag;
-                }
-                else
-                {
-                    m_currentDirection = EMovementDirection.None;
-                }
+            }
+        }
+        else if (m_currentFlag)
+        {
+            if (m_currentFlag.CanMoveInDirection(m_targetDirection))
+            {
+                // m_lastValidDirection = m_targetDirection;
+                m_currentDirection = m_targetDirection;
+                m_currentFlag = null;
+            }
+            else
+            {
+                m_currentDirection = EMovementDirection.None;
             }
         }
 
         // Update current direction when approaching an intersection
 
-        Vector2 directionVector = DirectionEnumToVector(m_currentDirection);
+        Vector2 directionVector = MovementUtils.DirectionEnumToVector(m_currentDirection);
 
         m_rigidbody.velocity = directionVector * m_moveSpeed;
-    }
-
-    private EMovementDirection DirectionVectorToEnum(Vector2 direction)
-    {
-        if (direction.x < 0) return EMovementDirection.Left;
-        if (direction.x > 0) return EMovementDirection.Right;
-        if (direction.y < 0) return EMovementDirection.Down;
-        if (direction.y > 0) return EMovementDirection.Up;
-
-        return EMovementDirection.None;
-    }
-
-    private Vector2 DirectionEnumToVector(EMovementDirection direction)
-    {
-        switch (m_currentDirection)
-        {
-            case EMovementDirection.Left: return Vector2.left;
-            case EMovementDirection.Right: return Vector2.right;
-            case EMovementDirection.Down: return Vector2.down;
-            case EMovementDirection.Up: return Vector2.up;
-        }
-
-        return Vector2.zero;
     }
 }
