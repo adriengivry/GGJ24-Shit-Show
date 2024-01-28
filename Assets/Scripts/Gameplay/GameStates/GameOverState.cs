@@ -8,8 +8,6 @@ using UnityEngine.SocialPlatforms.Impl;
 public class GameOverState : AGameState
 {
     [Header("Settings")]
-    [SerializeField] private float m_duration = 5.0f;
-    [SerializeField] private string m_nextSceneName = "Main Menu";
     [SerializeField] private TextMeshProUGUI m_scoreText;
     [SerializeField] private TextMeshProUGUI m_quoteText;
 
@@ -32,7 +30,11 @@ public class GameOverState : AGameState
         }
 
         m_scoreText.text = m_scoreText.text.Replace("{score}", manager.Score.ToString());
-        StartCoroutine(GoToScene(m_nextSceneName, m_duration));
+    }
+
+    public void ChangeScene(string sceneName)
+    {
+        StartCoroutine(GoToScene(sceneName, 0));
     }
 
     private IEnumerator GoToScene(string scene, float delay)
