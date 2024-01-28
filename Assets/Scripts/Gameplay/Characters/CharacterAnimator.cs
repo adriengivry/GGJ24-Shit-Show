@@ -17,6 +17,11 @@ public class CharacterAnimator : MonoBehaviour
 
     public void Update()
     {
+        if (GameManager.Instance.CurrentState == EGameState.Shooting)
+        {
+            m_animator.Play("Player Shooting");
+        }
+
         if (CharacterDirection != character.CurrentDirection)
         {
             CharacterDirection = character.CurrentDirection;

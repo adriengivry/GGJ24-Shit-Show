@@ -34,6 +34,8 @@ public class TomatoSpawner : MonoBehaviour
 
     private void Update()
     {
+        if (GameManager.Instance.CurrentState == EGameState.Intro) return;
+
         m_elapsed += Time.deltaTime;
 
         if (m_elapsed >= m_nextSpawnTimer)
