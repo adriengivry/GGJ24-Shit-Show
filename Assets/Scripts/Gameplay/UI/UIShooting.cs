@@ -10,12 +10,9 @@ public class UIShooting : MonoBehaviour
     public static float Remap(float value, float low1, float high1, float low2, float high2) =>
         low2 + (value - low1) * (high2 - low2) / (high1 - low1);
 
-    public void SetOptimalValue(float optimalValue, float margin)
+    public void SetOptimalValue(float optimalValue)
     {
         float containerH = ((RectTransform)m_sweetSpotZone.parent.transform).rect.height;
-        float newSweetSpotZoneH = Remap(margin * 2.0f, 0.0f, 1.0f, 0.0f, containerH);
-        m_sweetSpotZone.sizeDelta = new Vector2(m_sweetSpotZone.sizeDelta.x, newSweetSpotZoneH);
-
         float sweetSpotZoneH = m_sweetSpotZone.rect.height;
         float h = (containerH / 2.0f) - (sweetSpotZoneH / 2.0f);
         float posY = Remap(optimalValue, 0.0f, 1.0f, -h, h);
