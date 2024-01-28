@@ -8,7 +8,7 @@ public class Throwable : MonoBehaviour
     private Vector2 m_destination;
     private float m_strength;
 
-    public void Throw(Vector2 from, Vector2 to, float strength = 10.0f)
+    public void Throw(Vector2 from, Vector2 to, float strength)
     {
         gameObject.SetActive(true);
         transform.position = new Vector3(from.x, from.y, transform.position.z);

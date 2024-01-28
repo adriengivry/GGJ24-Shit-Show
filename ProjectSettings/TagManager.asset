@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Obstacle
+  - EnemySpawn
+  - TomatoSpawn
+  - Enemy
   layers:
   - Default
   - TransparentFX
