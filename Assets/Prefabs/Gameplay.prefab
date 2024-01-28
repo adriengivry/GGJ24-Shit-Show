@@ -2817,7 +2817,7 @@ MonoBehaviour:
   m_timeScale: 1
   m_fillSpeedRange: {x: 1, y: 2}
   m_throwingStrength: 20
-  m_marginOfError: 0.08
+  m_marginOfError: 0.2
   m_throwDestination: {fileID: 8825317351999424439}
   m_missedThrowLocations:
   - {fileID: 1256502130280530181}
