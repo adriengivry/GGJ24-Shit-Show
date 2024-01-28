@@ -11,11 +11,6 @@ public class SpriteAnimation : MonoBehaviour
     [SerializeField] private Sprite m_alternativeSprite;
     [SerializeField] private float m_duration;
 
-    private void Start()
-    {
-        //Animate();
-    }
-
     public void Animate()
     {
         var previousSprite = m_spriteRenderer.sprite;
