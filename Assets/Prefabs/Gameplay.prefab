@@ -504,9 +504,9 @@ RectTransform:
   - {fileID: 3052389471016422245}
   - {fileID: 8465427726834050040}
   - {fileID: 2888668151559473174}
-  - {fileID: 8742891536547783528}
   - {fileID: 2057171074102915233}
   - {fileID: 2190347725945970982}
+  - {fileID: 8742891536547783528}
   m_Father: {fileID: 5619897349645497035}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2672,6 +2672,8 @@ MonoBehaviour:
   - {fileID: 8122665713840349619}
   m_throwable: {fileID: 3000179319721534420}
   m_shootingUI: {fileID: 542275598785571348}
+  m_audiosource: {fileID: 0}
+  m_audioClips: []
 --- !u!1 &8181571042369642939
 GameObject:
   m_ObjectHideFlags: 0

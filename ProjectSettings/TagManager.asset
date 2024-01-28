@@ -48,14 +48,14 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Characters
-    uniqueID: 2034011987
-    locked: 0
   - name: Furniture Overlay
     uniqueID: 3277701503
     locked: 0
   - name: Overlay
     uniqueID: 43555791
+    locked: 0
+  - name: Characters
+    uniqueID: 2034011987
     locked: 0
   - name: UI
     uniqueID: 194292655
