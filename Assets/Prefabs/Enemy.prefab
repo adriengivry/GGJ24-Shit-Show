@@ -277,7 +277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0fb6e100daf0cb41bc4d5827d1c896b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_moveSpeed: 3
+  m_moveSpeed: 5
   m_rigidbody: {fileID: 1848634447876281344}
   m_debugDirectionalArrow: {fileID: 4823669782195596522}
   FlagReachedEvent:
