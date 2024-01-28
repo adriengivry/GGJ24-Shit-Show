@@ -710,6 +710,68 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &552319754
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1286260283}
+    m_Modifications:
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8930613512064154877, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_Name
+      value: Tomato Spawn 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+--- !u!4 &552319755 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+  m_PrefabInstance: {fileID: 552319754}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &611257471
 GameObject:
   m_ObjectHideFlags: 0
@@ -1302,6 +1364,68 @@ Transform:
   - {fileID: 110954664}
   m_Father: {fileID: 1614553678}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1112201155
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1286260283}
+    m_Modifications:
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8930613512064154877, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_Name
+      value: Tomato Spawn 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+--- !u!4 &1112201156 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+  m_PrefabInstance: {fileID: 1112201155}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1133132778
 GameObject:
   m_ObjectHideFlags: 0
@@ -1430,6 +1554,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48b119deff1aaa849b83b820dc81a115, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1286260282
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1286260283}
+  m_Layer: 0
+  m_Name: Tomato Spawns
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1286260283
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286260282}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5564374114313026324}
+  - {fileID: 552319755}
+  - {fileID: 1767444287}
+  - {fileID: 1112201156}
+  m_Father: {fileID: 1614553678}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1305593186
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1962,6 +2121,7 @@ Transform:
   - {fileID: 29221290}
   - {fileID: 817428548}
   - {fileID: 1050039612}
+  - {fileID: 1286260283}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1743846350
@@ -2008,6 +2168,68 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48b119deff1aaa849b83b820dc81a115, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1767444286
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1286260283}
+    m_Modifications:
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8930613512064154877, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_Name
+      value: Tomato Spawn 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+--- !u!4 &1767444287 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+  m_PrefabInstance: {fileID: 1767444286}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1798133974 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7410258886869111353, guid: b1fe47263e2c2244eb64611f297126cf, type: 3}
@@ -2143,6 +2365,68 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &957078474015947747
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1286260283}
+    m_Modifications:
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8930613512064154877, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+      propertyPath: m_Name
+      value: Tomato Spawn 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+--- !u!4 &5564374114313026324 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8082251579611577016, guid: 5d890138db2a4dd4d9e1d3e2e2afee14, type: 3}
+  m_PrefabInstance: {fileID: 957078474015947747}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6395266114612219758
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2251,26 +2535,6 @@ PrefabInstance:
     - target: {fileID: 5443476108666020076, guid: d7f19bc8b93f1a3458031029669044b8, type: 3}
       propertyPath: m_Name
       value: ---- GAMEPLAY ----
-      objectReference: {fileID: 0}
-    - target: {fileID: 8323563859588290522, guid: d7f19bc8b93f1a3458031029669044b8, type: 3}
-      propertyPath: m_enemiesOverScore.m_Curve.Array.data[0].value
-      value: 0.999
-      objectReference: {fileID: 0}
-    - target: {fileID: 8323563859588290522, guid: d7f19bc8b93f1a3458031029669044b8, type: 3}
-      propertyPath: m_enemiesOverScore.m_Curve.Array.data[0].inSlope
-      value: 0.45005003
-      objectReference: {fileID: 0}
-    - target: {fileID: 8323563859588290522, guid: d7f19bc8b93f1a3458031029669044b8, type: 3}
-      propertyPath: m_enemiesOverScore.m_Curve.Array.data[1].inSlope
-      value: 0.45005003
-      objectReference: {fileID: 0}
-    - target: {fileID: 8323563859588290522, guid: d7f19bc8b93f1a3458031029669044b8, type: 3}
-      propertyPath: m_enemiesOverScore.m_Curve.Array.data[0].outSlope
-      value: 0.45005003
-      objectReference: {fileID: 0}
-    - target: {fileID: 8323563859588290522, guid: d7f19bc8b93f1a3458031029669044b8, type: 3}
-      propertyPath: m_enemiesOverScore.m_Curve.Array.data[1].outSlope
-      value: 0.45005003
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

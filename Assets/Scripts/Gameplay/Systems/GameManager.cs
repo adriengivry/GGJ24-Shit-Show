@@ -22,12 +22,14 @@ public class GameManager : MonoBehaviour
     [SerializeField] private SerializedDictionary<EGameState, AGameState> m_gameStates;
 
     public UnityEvent<int> ScoreChangedEvent = new UnityEvent<int>();
+    public UnityEvent<int> TomatoCountChangedEvent = new UnityEvent<int>();
 
     public static GameManager Instance => m_instance;
 
     public Character Player => m_player;
     public FlagRegistry FlagRegistry => m_flagRegistry;
     public int Score => m_score;
+    public int Tomatoes => m_tomatoes;
 
     public EGameState CurrentState => m_gameStateLayers.Peek();
 
@@ -36,6 +38,7 @@ public class GameManager : MonoBehaviour
     private GameObject FindPlayerGameObject() => GameObject.FindGameObjectWithTag("Player");
     private Character m_player;
     private int m_score;
+    private int m_tomatoes;
 
     private static GameManager m_instance = null;
 
@@ -45,8 +48,21 @@ public class GameManager : MonoBehaviour
         GameObject playerGameObject = FindPlayerGameObject();
         m_player = playerGameObject?.GetComponent<Character>();
         m_score = 0;
+        m_tomatoes = 0;
         Debug.Assert(m_player != null, "No player has been found! Make sure to add the Player prefab in your scene.");
         PushState(m_initialGameState);
+    }
+
+    public void AddTomato()
+    {
+        ++m_tomatoes;
+        TomatoCountChangedEvent.Invoke(m_tomatoes);
+    }
+
+    public void RemoveTomato()
+    {
+        --m_tomatoes;
+        TomatoCountChangedEvent.Invoke(m_tomatoes);
     }
 
     public void IncrementScore(int value)
@@ -80,7 +96,7 @@ public class GameManager : MonoBehaviour
         {
             PopState();
         }
-        else
+        else if (m_tomatoes > 0)
         {
             PushState(EGameState.Shooting);
         }

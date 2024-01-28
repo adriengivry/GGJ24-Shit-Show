@@ -1,9 +1,11 @@
+using System.Collections;
 using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
     [Header("Settings")]
     [SerializeField] private AnimationCurve m_enemiesOverScore;
+    [SerializeField] private float m_delayBetweenSpawningEnemies = 1.5f;
 
     [Header("References")]
     [SerializeField] private GameObject m_enemyPrefab;
@@ -34,8 +36,14 @@ public class EnemySpawner : MonoBehaviour
         int totalEnemiesToSpawn = (int)m_enemiesOverScore.Evaluate(score);
         int enemiesToSpawn = totalEnemiesToSpawn - m_enemyCount;
 
+        StartCoroutine(SpawnEnemiesEachXSeconds(enemiesToSpawn, m_delayBetweenSpawningEnemies));
+    }
+
+    private IEnumerator SpawnEnemiesEachXSeconds(int enemiesToSpawn, float delay)
+    {
         for (int i = 0; i < enemiesToSpawn; ++i)
         {
+            yield return new WaitForSeconds(delay);
             SpawnEnemy();
         }
     }

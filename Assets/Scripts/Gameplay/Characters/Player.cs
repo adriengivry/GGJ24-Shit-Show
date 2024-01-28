@@ -6,6 +6,9 @@ public class Player : Character
 {
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        GameManager.Instance.PushState(EGameState.GameOver);
+        if (collision.CompareTag("Enemy"))
+        {
+            GameManager.Instance.PushState(EGameState.GameOver);
+        }
     }
 }

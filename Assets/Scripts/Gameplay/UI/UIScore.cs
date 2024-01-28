@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -27,6 +25,6 @@ public class UIScore : MonoBehaviour
 
     public void Refresh(int newScore)
     {
-        m_text.text = m_initialText.Replace("{value}", GameManager.Instance.Score.ToString());
+        m_text.text = m_initialText.Replace("{value}", newScore.ToString());
     }
 }
