@@ -98,3 +98,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_travelTime: 1.5
+  m_rotationSpeed: 360
+  m_splashPool: {fileID: 0}
+  m_audiosource: {fileID: 0}
