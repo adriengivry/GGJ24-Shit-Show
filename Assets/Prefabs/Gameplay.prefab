@@ -1488,14 +1488,19 @@ MonoBehaviour:
   m_gameOverUI: {fileID: 924786701751303055}
   m_quotePerScoreMilestone:
     _serializedList:
+    - Key: 20
+      Value: Damn. You should consider a real career like baseball.
+    - Key: 15
+      Value: That's what he gets for making fun of vegans!That's what he gets for
+        making fun of vegans!
     - Key: 10
-      Value: Incredible!
+      Value: Security did not enjoy your saucy performance.
     - Key: 5
-      Value: Getting good!
+      Value: Caught in the tomato crossfire!
     - Key: 1
       Value: Well, you tried
     - Key: 0
-      Value: Wow, you really suck!
+      Value: Next time you come to vegan night, learn to throw.
 --- !u!1 &3162111286170167102
 GameObject:
   m_ObjectHideFlags: 0
