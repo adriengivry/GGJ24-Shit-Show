@@ -5,6 +5,7 @@ public class PlayerController : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private GameManager m_gameManager;
+    public Animator m_animator;
 
     public void OnMove(InputAction.CallbackContext context)
     {
@@ -16,6 +17,11 @@ public class PlayerController : MonoBehaviour
         {
             var directionVector = context.ReadValue<Vector2>();
             EMovementDirection direction = MovementUtils.DirectionVectorToEnum(directionVector);
+            
+            if (m_animator != null) { 
+                m_animator.SetFloat("X", directionVector.x);
+                m_animator.SetFloat("Y", directionVector.y);
+            }
 
             // During gameplay, we can't go back to no direction, there is always a set direction
             if (direction != EMovementDirection.None)
