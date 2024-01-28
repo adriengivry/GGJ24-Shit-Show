@@ -32,6 +32,7 @@ public class ShootingState : AGameState
         {
             Debug.Log("Successful throw!");
             m_throwable.Throw(manager.Player.transform.position, m_throwDestination.position);
+            manager.IncrementScore(1);
             // Successfull throw
         }
         else

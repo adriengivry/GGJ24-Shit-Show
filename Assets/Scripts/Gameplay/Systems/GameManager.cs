@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using AYellowpaper.SerializedCollections;
+using UnityEngine.Events;
 
 public enum EGameState
 {
@@ -20,10 +21,13 @@ public class GameManager : MonoBehaviour
     [SerializeField] private FlagRegistry m_flagRegistry;
     [SerializeField] private SerializedDictionary<EGameState, AGameState> m_gameStates;
 
+    public UnityEvent<int> ScoreChangedEvent = new UnityEvent<int>();
+
     public static GameManager Instance => m_instance;
 
     public Character Player => m_player;
     public FlagRegistry FlagRegistry => m_flagRegistry;
+    public int Score => m_score;
 
     public EGameState CurrentState => m_gameStateLayers.Peek();
 
@@ -31,6 +35,7 @@ public class GameManager : MonoBehaviour
 
     private GameObject FindPlayerGameObject() => GameObject.FindGameObjectWithTag("Player");
     private Character m_player;
+    private int m_score;
 
     private static GameManager m_instance = null;
 
@@ -39,8 +44,15 @@ public class GameManager : MonoBehaviour
         m_instance = this;
         GameObject playerGameObject = FindPlayerGameObject();
         m_player = playerGameObject?.GetComponent<Character>();
+        m_score = 0;
         Debug.Assert(m_player != null, "No player has been found! Make sure to add the Player prefab in your scene.");
         PushState(m_initialGameState);
+    }
+
+    public void IncrementScore(int value)
+    {
+        m_score += value;
+        ScoreChangedEvent.Invoke(m_score);
     }
 
     public void SkipIntro()
