@@ -6,6 +6,9 @@ public class Throwable : MonoBehaviour
     [SerializeField] private float m_travelTime = 1.0f;
     [SerializeField] private AudioSource m_audiosource;
 
+    [Header("References")]
+    [SerializeField] private InstancePool m_splashPool;
+
     private Vector2 m_destination;
     private float m_strength;
 
@@ -27,6 +30,9 @@ public class Throwable : MonoBehaviour
         if (Vector2.Distance(transform.position, m_destination) < 0.01f)
         {
             if (m_audiosource.clip != null) m_audiosource.Play();
+            GameObject splash = m_splashPool.GetAvailableInstance();
+            splash.transform.position = transform.position;
+            splash.SetActive(true);
             gameObject.SetActive(false); // Deactivate the object when it reaches the destination
         }
     }

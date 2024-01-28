@@ -95,7 +95,7 @@ Shader "Custom/2D/UnlitColorMapping"
 
             float4 RemapColor(float4 color, float3 origin, float3 target)
             {
-                if (distance(color.rgb, origin) <= 0.9f)
+                if (distance(color.rgb, origin) < 0.86f)
                 {
                     return float4(target.r, target.g, target.b, color.a);
                 }
@@ -196,7 +196,7 @@ Shader "Custom/2D/UnlitColorMapping"
 
             float4 RemapColor(float4 color, float3 origin, float3 target)
             {
-                if (color.r == origin.r && color.g == origin.g && color.b == origin.b)
+                if (distance(color.rgb, origin) < 0.86f)
                 {
                     return float4(target.r, target.g, target.b, color.a);
                 }

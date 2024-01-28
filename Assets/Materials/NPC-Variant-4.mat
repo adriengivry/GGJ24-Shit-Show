@@ -87,9 +87,9 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RemappedColorSourceA: {r: 1, g: 0.007843138, b: 0.96470594, a: 1}
+    - _RemappedColorSourceA: {r: 1, g: 0, b: 0, a: 1}
     - _RemappedColorSourceB: {r: 0, g: 0, b: 1, a: 1}
-    - _RemappedColorSourceC: {r: 1, g: 1, b: 0, a: 1}
+    - _RemappedColorSourceC: {r: 0, g: 1, b: 0, a: 1}
     - _RemappedColorSourceD: {r: 1, g: 1, b: 1, a: 1}
     - _RemappedColorTargetA: {r: 0.6509804, g: 0.4862745, b: 0.32156864, a: 1}
     - _RemappedColorTargetB: {r: 0.50980395, g: 0.27058825, b: 0.12941177, a: 1}
