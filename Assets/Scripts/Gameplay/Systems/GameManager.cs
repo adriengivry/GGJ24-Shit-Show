@@ -90,15 +90,19 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void ToggleShooting()
+    public void StartShooting()
+    {
+        if (m_tomatoes > 0)
+        {
+            PushState(EGameState.Shooting);
+        }
+    }
+
+    public void StopShooting()
     {
         if (m_gameStateLayers.TryPeek(out var layer) && layer == EGameState.Shooting)
         {
             PopState();
-        }
-        else if (m_tomatoes > 0)
-        {
-            PushState(EGameState.Shooting);
         }
     }
 

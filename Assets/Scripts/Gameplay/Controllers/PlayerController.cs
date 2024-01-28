@@ -33,16 +33,17 @@ public class PlayerController : MonoBehaviour
 
     public void OnFire(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (m_gameManager.CurrentState == EGameState.Gameplay && context.started)
         {
-            if (m_gameManager.CurrentState == EGameState.Intro)
-            {
-                m_gameManager.SkipIntro();
-            }
-            else if (m_gameManager.CurrentState == EGameState.Gameplay || m_gameManager.CurrentState == EGameState.Shooting)
-            {
-                m_gameManager.ToggleShooting();
-            }
+            m_gameManager.StartShooting();
+        }
+        else if (m_gameManager.CurrentState == EGameState.Shooting && context.canceled)
+        {
+            m_gameManager.StopShooting();
+        }
+        else if (m_gameManager.CurrentState == EGameState.Intro && context.performed)
+        { 
+            m_gameManager.SkipIntro();
         }
     }
 

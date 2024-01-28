@@ -65,7 +65,10 @@ public class Character : MonoBehaviour
 
             Vector2 directionVector = MovementUtils.DirectionEnumToVector(m_currentDirection);
 
-            m_rigidbody.velocity = directionVector * m_moveSpeed;
+            m_rigidbody.velocity =
+                gameObject.CompareTag("Player") && GameManager.Instance.CurrentState == EGameState.Shooting ?
+                Vector2.zero :
+                directionVector * m_moveSpeed;
         }
         else
         {
