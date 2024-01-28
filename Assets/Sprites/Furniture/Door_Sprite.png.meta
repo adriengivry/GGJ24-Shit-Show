@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b11f38608dc22cf4da727a4e7ce71d2f
+guid: a3ccc584b3e6ab84fa9c61731f83a832
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -136,12 +136,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: security_side_0
+      name: Door_Sprite_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 60
+        width: 120
         height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -150,40 +150,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c09a7d01cffb734b973a57a03990380
-      internalID: 1476886469
+      spriteID: 5c74c4f372a61764cb16e1f1a108eb82
+      internalID: 1632304048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: security_side_1
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 0
-        width: 60
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ac45a5a5cc283104f9f9c7d8c58fbbba
-      internalID: -1878364599
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: security_side_2
+      name: Door_Sprite_1
       rect:
         serializedVersion: 2
         x: 120
         y: 0
-        width: 60
+        width: 120
         height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -192,71 +171,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 744f59a0dca26264a902272aad30567a
-      internalID: 719573934
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: security_side_3
-      rect:
-        serializedVersion: 2
-        x: 180
-        y: 0
-        width: 60
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 011b10e4f40d2a149bdd5083055aff7b
-      internalID: -97401230
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: security_side_4
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 0
-        width: 60
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3c3fc682aba325b4cbc18c0fe156b754
-      internalID: -345440801
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: security_side_5
-      rect:
-        serializedVersion: 2
-        x: 300
-        y: 0
-        width: 60
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 92bae9eda918e854aa644325bceaba9b
-      internalID: 947690398
+      spriteID: ea1285cb2a3094347a7c1d8b9dc345c6
+      internalID: -455276994
       vertices: []
       indices: 
       edges: []
@@ -272,12 +188,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      security_side_0: 1476886469
-      security_side_1: -1878364599
-      security_side_2: 719573934
-      security_side_3: -97401230
-      security_side_4: -345440801
-      security_side_5: 947690398
+      Door_Sprite_0: 1632304048
+      Door_Sprite_1: -455276994
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

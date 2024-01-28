@@ -10,13 +10,20 @@ public class EnemySpawner : MonoBehaviour
     [Header("References")]
     [SerializeField] private GameObject m_enemyPrefab;
 
-    private GameObject[] m_spawnLocations;
+    public SpriteAnimation[] m_spawnLocations;
 
     private int m_enemyCount = 0;
 
-    private GameObject[] FindSpawnLocations()
+    private SpriteAnimation[] FindSpawnLocations()
     {
-        return GameObject.FindGameObjectsWithTag("EnemySpawn");
+        GameObject[] spawners = GameObject.FindGameObjectsWithTag("EnemySpawn");
+        SpriteAnimation[] sprites = new SpriteAnimation[spawners.Length];
+        
+        for (int i = 0; i < sprites.Length; ++i)
+        {
+            sprites[i] = spawners[i].GetComponent<SpriteAnimation>();
+        }
+        return sprites;
     }
 
     private void Start()
@@ -50,8 +57,10 @@ public class EnemySpawner : MonoBehaviour
 
     private void SpawnEnemy()
     {
+        int spawnlocation = Random.Range(0, m_spawnLocations.Length);
         Debug.Assert(m_spawnLocations.Length > 0, "No spawn location found!");
-        Transform targetSpawn = m_spawnLocations[Random.Range(0, m_spawnLocations.Length)].transform;
+        m_spawnLocations[spawnlocation].Animate();
+        Transform targetSpawn = m_spawnLocations[spawnlocation].transform;
         Transform instance = Instantiate(m_enemyPrefab.transform, targetSpawn.position, Quaternion.identity);
         // TODO: set target direction based on a Spawn Location script instance.gameObject.GetComponent<Character>().SetTargetDirection(EMovementDirection)
         ++m_enemyCount;

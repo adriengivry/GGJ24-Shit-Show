@@ -13,7 +13,7 @@ public class SpriteAnimation : MonoBehaviour
 
     private void Start()
     {
-        Animate();
+        //Animate();
     }
 
     public void Animate()
