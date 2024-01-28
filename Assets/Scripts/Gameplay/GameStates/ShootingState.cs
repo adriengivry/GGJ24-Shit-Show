@@ -4,9 +4,9 @@ public class ShootingState : AGameState
 {
     [Header("Settings")]
     [SerializeField] private float m_timeScale = 0.5f;
-    [SerializeField] private Vector2 m_fillSpeedRange = new Vector2(3.0f, 8.0f);
+    [SerializeField] private Vector2 m_fillSpeedRange = new Vector2(3.0f, 10.0f);
     [SerializeField] private float m_throwingStrength = 20.0f;
-    [SerializeField] private Vector2 m_marginOfErrorRange = new Vector2(0.05f, 0.1f);
+    [SerializeField] private float m_marginOfError = 0.1f;
 
     [Header("References")]
     [SerializeField] private Transform m_throwDestination;
@@ -18,7 +18,6 @@ public class ShootingState : AGameState
     private float m_optimalValue;
 
     private float m_startTime = 0.0f;
-    private float m_currentMarginOfError = 0.0f;
     private float m_currentFillSpeed = 0.0f;
 
     public override void OnEnterState(GameManager manager)
@@ -27,16 +26,15 @@ public class ShootingState : AGameState
         m_optimalValue = Random.Range(0.3f, 1.0f);
         Time.timeScale = m_timeScale;
         m_shootingUI.gameObject.SetActive(true);
-        m_currentMarginOfError = Random.Range(m_marginOfErrorRange.x, m_marginOfErrorRange.y);
         m_currentFillSpeed = Random.Range(m_fillSpeedRange.x, m_fillSpeedRange.y);
-        m_shootingUI.SetOptimalValue(m_optimalValue, m_currentMarginOfError);
+        m_shootingUI.SetOptimalValue(m_optimalValue);
     }
 
     public override void OnExitState(GameManager manager)
     {
         manager.RemoveTomato();
 
-        if (Mathf.Abs(m_currentValue - m_optimalValue) <= m_currentMarginOfError)
+        if (Mathf.Abs(m_currentValue - m_optimalValue) <= m_marginOfError)
         {
             Debug.Log("Successful throw!");
             m_throwable.Throw(manager.Player.transform.position, m_throwDestination.position, m_throwingStrength);
