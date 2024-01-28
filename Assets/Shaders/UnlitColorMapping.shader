@@ -13,9 +13,6 @@ Shader "Custom/2D/UnlitColorMapping"
         _RemappedColorSourceC ("Remapped Color Source C", Color) = (1,1,1,1)
         _RemappedColorTargetC ("Remapped Color Target C", Color) = (1,1,1,1)
 
-        _RemappedColorSourceD ("Remapped Color Source D", Color) = (1,1,1,1)
-        _RemappedColorTargetD ("Remapped Color Target D", Color) = (1,1,1,1)
-
         // Legacy properties. They're here so that materials using this shader can gracefully fallback to the legacy sprite shader.
         [HideInInspector] _Color ("Tint", Color) = (1,1,1,1)
         [HideInInspector] PixelSnap ("Pixel snap", Float) = 0
@@ -79,8 +76,6 @@ Shader "Custom/2D/UnlitColorMapping"
             float4 _RemappedColorTargetB;
             float4 _RemappedColorSourceC;
             float4 _RemappedColorTargetC;
-            float4 _RemappedColorSourceD;
-            float4 _RemappedColorTargetD;
             half4 _RendererColor;
 
             Varyings UnlitVertex(Attributes v)
@@ -100,7 +95,7 @@ Shader "Custom/2D/UnlitColorMapping"
 
             float4 RemapColor(float4 color, float3 origin, float3 target)
             {
-                if (color.r == origin.r && color.g == origin.g && color.b == origin.b)
+                if (distance(color.rgb, origin) <= 0.9f)
                 {
                     return float4(target.r, target.g, target.b, color.a);
                 }
@@ -115,7 +110,6 @@ Shader "Custom/2D/UnlitColorMapping"
                 mainTex = RemapColor(mainTex, _RemappedColorSourceA, _RemappedColorTargetA);
                 mainTex = RemapColor(mainTex, _RemappedColorSourceB, _RemappedColorTargetB);
                 mainTex = RemapColor(mainTex, _RemappedColorSourceC, _RemappedColorTargetC);
-                mainTex = RemapColor(mainTex, _RemappedColorSourceD, _RemappedColorTargetD);
 
                 #if defined(DEBUG_DISPLAY)
                 SurfaceData2D surfaceData;
@@ -183,8 +177,6 @@ Shader "Custom/2D/UnlitColorMapping"
             float4 _RemappedColorTargetB;
             float4 _RemappedColorSourceC;
             float4 _RemappedColorTargetC;
-            float4 _RemappedColorSourceD;
-            float4 _RemappedColorTargetD;
             half4 _RendererColor;
 
             Varyings UnlitVertex(Attributes attributes)
@@ -219,7 +211,6 @@ Shader "Custom/2D/UnlitColorMapping"
                 mainTex = RemapColor(mainTex, _RemappedColorSourceA, _RemappedColorTargetA);
                 mainTex = RemapColor(mainTex, _RemappedColorSourceB, _RemappedColorTargetB);
                 mainTex = RemapColor(mainTex, _RemappedColorSourceC, _RemappedColorTargetC);
-                mainTex = RemapColor(mainTex, _RemappedColorSourceD, _RemappedColorTargetD);
 
                 #if defined(DEBUG_DISPLAY)
                 SurfaceData2D surfaceData;
