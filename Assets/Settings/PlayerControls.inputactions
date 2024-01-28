@@ -168,6 +168,17 @@
                 },
                 {
                     "name": "",
+                    "id": "ebb92348-359b-4fd0-ba5f-a944c4aeab1a",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "c75579dc-78e3-4200-91ed-6046a663d3b8",
                     "path": "<Gamepad>/start",
                     "interactions": "",
