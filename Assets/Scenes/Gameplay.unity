@@ -3909,6 +3909,10 @@ PrefabInstance:
       propertyPath: m_flagRegistry
       value: 
       objectReference: {fileID: 1440444200}
+    - target: {fileID: 7976095315549018192, guid: d7f19bc8b93f1a3458031029669044b8, type: 3}
+      propertyPath: m_initialDirection
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

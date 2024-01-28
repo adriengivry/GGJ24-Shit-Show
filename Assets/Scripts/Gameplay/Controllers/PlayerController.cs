@@ -3,9 +3,16 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("Settings")]
+    [SerializeField] private EMovementDirection m_initialDirection;
+
     [Header("References")]
     [SerializeField] private GameManager m_gameManager;
-    //[SerializeField] private Animator m_animator;
+
+    private void Start()
+    {
+        m_gameManager.Player.SetTargetDirection(m_initialDirection);
+    }
 
     public void OnMove(InputAction.CallbackContext context)
     {

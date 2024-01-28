@@ -5,8 +5,10 @@ using UnityEngine;
 
 public class AIController : MonoBehaviour
 {
-    [Header("References")]
+    [Header("Settings")]
     [SerializeField] private EMovementDirection m_initialDirection;
+
+    [Header("References")]
     [SerializeField] private Character m_character;
 
     // Start is called before the first frame update
