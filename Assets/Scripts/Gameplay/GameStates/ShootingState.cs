@@ -41,7 +41,6 @@ public class ShootingState : AGameState
             Debug.Log("Successful throw!");
             m_throwable.Throw(manager.Player.transform.position, m_throwDestination.position, m_throwingStrength);
             m_audiosource.clip = m_audioClips[0];
-            m_audiosource.PlayDelayed(0.65f);
             manager.IncrementScore(1);
         }
         else
@@ -49,6 +48,7 @@ public class ShootingState : AGameState
             Debug.Log("Missed throw!");
             Debug.Assert(m_missedThrowLocations.Length > 0, "No missed throw locations set!");
             int locationIndex = Random.Range(0, m_missedThrowLocations.Length);
+            m_audiosource.clip = null;
             m_audiosource.PlayOneShot(m_audioClips[1]);
             m_throwable.Throw(manager.Player.transform.position, m_missedThrowLocations[locationIndex].position, m_throwingStrength);
         }

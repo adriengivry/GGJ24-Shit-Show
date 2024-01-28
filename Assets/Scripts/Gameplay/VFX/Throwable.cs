@@ -4,6 +4,7 @@ public class Throwable : MonoBehaviour
 {
     [Header("Settings")]
     [SerializeField] private float m_travelTime = 1.0f;
+    [SerializeField] private AudioSource m_audiosource;
 
     private Vector2 m_destination;
     private float m_strength;
@@ -25,6 +26,7 @@ public class Throwable : MonoBehaviour
         // Check if the object has reached the destination
         if (Vector2.Distance(transform.position, m_destination) < 0.01f)
         {
+            if (m_audiosource.clip != null) m_audiosource.Play();
             gameObject.SetActive(false); // Deactivate the object when it reaches the destination
         }
     }

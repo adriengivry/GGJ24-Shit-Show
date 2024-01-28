@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 76512368c04b05c4e965526cf3d961cb
+guid: 529bf2b3fec1c3547b770d2fa7fe1339
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -134,7 +134,49 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Table_v2_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2da1d3e8c6e4d6d46b43978149bf4b1a
+      internalID: 1182253772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Table_v2_13
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 120
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90bedb2c51a1a49458a6e9eb19f2ec7f
+      internalID: 1906525616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -145,7 +187,25 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Table_v2_0: -1265492938
+      Table_v2_1: 556455821
+      Table_v2_10: -1765767599
+      Table_v2_11: 2056320303
+      Table_v2_12: 1182253772
+      Table_v2_13: 1906525616
+      Table_v2_14: 469045529
+      Table_v2_15: 1126049770
+      Table_v2_16: 24170169
+      Table_v2_17: 1493804147
+      Table_v2_2: 775746226
+      Table_v2_3: -1255048458
+      Table_v2_4: -1097746770
+      Table_v2_5: 783869074
+      Table_v2_6: -2121258377
+      Table_v2_7: -132393641
+      Table_v2_8: -1845983508
+      Table_v2_9: 880991350
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
