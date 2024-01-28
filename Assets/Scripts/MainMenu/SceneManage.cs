@@ -30,7 +30,7 @@ public class SceneManage : MonoBehaviour
         fadeAnimator.Play("fade_in");
         StartCoroutine(EndAnimationFinished(scene));
         if (audioSrc != null)
-            StartCoroutine(StartMusicFade(1f, 1, 0));
+            StartCoroutine(StartMusicFade(1f, audioSrc.volume, 0));
     }
 
     IEnumerator EndAnimationFinished(string scene)
