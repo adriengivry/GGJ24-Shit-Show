@@ -443,6 +443,7 @@ GameObject:
   m_Component:
   - component: {fileID: 79359111}
   - component: {fileID: 79359112}
+  - component: {fileID: 79359113}
   m_Layer: 0
   m_Name: sitting_boy (6)
   m_TagString: Untagged
@@ -517,6 +518,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &79359113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79359110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 291d3c66c8d2d0249bb411c8289ec437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_speedRange: {x: 1, y: 5}
+  m_amplitudeRange: {x: 0, y: 10}
 --- !u!1001 &91046315
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3582,6 +3597,7 @@ GameObject:
   m_Component:
   - component: {fileID: 273637513}
   - component: {fileID: 273637514}
+  - component: {fileID: 273637515}
   m_Layer: 0
   m_Name: sitting_girl (2)
   m_TagString: Untagged
@@ -3656,6 +3672,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &273637515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 273637512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 291d3c66c8d2d0249bb411c8289ec437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_speedRange: {x: 1, y: 5}
+  m_amplitudeRange: {x: 0, y: 10}
 --- !u!1 &286601000
 GameObject:
   m_ObjectHideFlags: 0
@@ -3936,6 +3966,7 @@ GameObject:
   m_Component:
   - component: {fileID: 365590143}
   - component: {fileID: 365590144}
+  - component: {fileID: 365590145}
   m_Layer: 0
   m_Name: sitting_girl (3)
   m_TagString: Untagged
@@ -4010,6 +4041,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &365590145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365590142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 291d3c66c8d2d0249bb411c8289ec437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_speedRange: {x: 1, y: 5}
+  m_amplitudeRange: {x: 0, y: 10}
 --- !u!4 &371629973 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6284369417353294073, guid: dbe0abbf7cd14dc4e8ecdaa6b213b603, type: 3}
@@ -4149,6 +4194,7 @@ GameObject:
   m_Component:
   - component: {fileID: 420190414}
   - component: {fileID: 420190415}
+  - component: {fileID: 420190416}
   m_Layer: 0
   m_Name: sitting_boy (8)
   m_TagString: Untagged
@@ -4223,6 +4269,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &420190416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420190413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 291d3c66c8d2d0249bb411c8289ec437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_speedRange: {x: 1, y: 5}
+  m_amplitudeRange: {x: 0, y: 10}
 --- !u!1001 &426995221
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5837,6 +5897,7 @@ GameObject:
   m_Component:
   - component: {fileID: 571003357}
   - component: {fileID: 571003358}
+  - component: {fileID: 571003359}
   m_Layer: 0
   m_Name: sitting_boy (13)
   m_TagString: Untagged
@@ -5911,6 +5972,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &571003359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571003356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 291d3c66c8d2d0249bb411c8289ec437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_speedRange: {x: 1, y: 5}
+  m_amplitudeRange: {x: 0, y: 10}
 --- !u!1001 &578948417
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6288,6 +6363,7 @@ GameObject:
   m_Component:
   - component: {fileID: 680233634}
   - component: {fileID: 680233635}
+  - component: {fileID: 680233636}
   m_Layer: 0
   m_Name: sitting_girl (6)
   m_TagString: Untagged
@@ -6362,6 +6438,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &680233636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680233633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 291d3c66c8d2d0249bb411c8289ec437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_speedRange: {x: 1, y: 5}
+  m_amplitudeRange: {x: 0, y: 10}
 --- !u!1 &690315265
 GameObject:
   m_ObjectHideFlags: 0
@@ -6372,6 +6462,7 @@ GameObject:
   m_Component:
   - component: {fileID: 690315266}
   - component: {fileID: 690315267}
+  - component: {fileID: 690315268}
   m_Layer: 0
   m_Name: sitting_girl
   m_TagString: Untagged
@@ -6446,6 +6537,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &690315268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690315265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 291d3c66c8d2d0249bb411c8289ec437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_speedRange: {x: 1, y: 5}
+  m_amplitudeRange: {x: 0, y: 10}
 --- !u!4 &696456985 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6284369417353294073, guid: dbe0abbf7cd14dc4e8ecdaa6b213b603, type: 3}
@@ -6911,6 +7016,7 @@ GameObject:
   m_Component:
   - component: {fileID: 805926972}
   - component: {fileID: 805926973}
+  - component: {fileID: 805926974}
   m_Layer: 0
   m_Name: sitting_boy
   m_TagString: Untagged
@@ -6985,6 +7091,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &805926974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805926971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 291d3c66c8d2d0249bb411c8289ec437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_speedRange: {x: 1, y: 5}
+  m_amplitudeRange: {x: 0, y: 10}
 --- !u!1001 &825481503
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7249,6 +7369,7 @@ GameObject:
   m_Component:
   - component: {fileID: 885405481}
   - component: {fileID: 885405482}
+  - component: {fileID: 885405483}
   m_Layer: 0
   m_Name: sitting_boy (1)
   m_TagString: Untagged
@@ -7323,6 +7444,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &885405483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885405480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 291d3c66c8d2d0249bb411c8289ec437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_speedRange: {x: 1, y: 5}
+  m_amplitudeRange: {x: 0, y: 10}
 --- !u!4 &893027969 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6284369417353294073, guid: dbe0abbf7cd14dc4e8ecdaa6b213b603, type: 3}
@@ -7814,6 +7949,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1061434748}
   - component: {fileID: 1061434749}
+  - component: {fileID: 1061434750}
   m_Layer: 0
   m_Name: sitting_boy (10)
   m_TagString: Untagged
@@ -7888,6 +8024,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1061434750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061434747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 291d3c66c8d2d0249bb411c8289ec437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_speedRange: {x: 1, y: 5}
+  m_amplitudeRange: {x: 0, y: 10}
 --- !u!4 &1095614087 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6284369417353294073, guid: dbe0abbf7cd14dc4e8ecdaa6b213b603, type: 3}
@@ -8604,6 +8754,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1302454800}
   - component: {fileID: 1302454801}
+  - component: {fileID: 1302454802}
   m_Layer: 0
   m_Name: sitting_girl (4)
   m_TagString: Untagged
@@ -8678,6 +8829,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1302454802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302454799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 291d3c66c8d2d0249bb411c8289ec437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_speedRange: {x: 1, y: 5}
+  m_amplitudeRange: {x: 0, y: 10}
 --- !u!1001 &1302952848
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9190,6 +9355,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1431434582}
   - component: {fileID: 1431434583}
+  - component: {fileID: 1431434584}
   m_Layer: 0
   m_Name: sitting_girl (1)
   m_TagString: Untagged
@@ -9264,6 +9430,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1431434584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431434581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 291d3c66c8d2d0249bb411c8289ec437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_speedRange: {x: 1, y: 5}
+  m_amplitudeRange: {x: 0, y: 10}
 --- !u!1 &1440444195
 GameObject:
   m_ObjectHideFlags: 0
@@ -13150,6 +13330,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1445104063}
   - component: {fileID: 1445104064}
+  - component: {fileID: 1445104065}
   m_Layer: 0
   m_Name: sitting_boy (12)
   m_TagString: Untagged
@@ -13224,6 +13405,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1445104065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445104062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 291d3c66c8d2d0249bb411c8289ec437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_speedRange: {x: 1, y: 5}
+  m_amplitudeRange: {x: 0, y: 10}
 --- !u!4 &1475121981 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6284369417353294073, guid: dbe0abbf7cd14dc4e8ecdaa6b213b603, type: 3}
@@ -13363,6 +13558,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1499356175}
   - component: {fileID: 1499356176}
+  - component: {fileID: 1499356177}
   m_Layer: 0
   m_Name: sitting_girl (5)
   m_TagString: Untagged
@@ -13437,6 +13633,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1499356177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499356174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 291d3c66c8d2d0249bb411c8289ec437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_speedRange: {x: 1, y: 5}
+  m_amplitudeRange: {x: 0, y: 10}
 --- !u!1001 &1506107549
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13691,6 +13901,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1537643903}
   - component: {fileID: 1537643904}
+  - component: {fileID: 1537643905}
   m_Layer: 0
   m_Name: sitting_boy (9)
   m_TagString: Untagged
@@ -13765,6 +13976,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1537643905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537643902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 291d3c66c8d2d0249bb411c8289ec437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_speedRange: {x: 1, y: 5}
+  m_amplitudeRange: {x: 0, y: 10}
 --- !u!1 &1547439283
 GameObject:
   m_ObjectHideFlags: 0
@@ -13775,6 +14000,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1547439284}
   - component: {fileID: 1547439285}
+  - component: {fileID: 1547439286}
   m_Layer: 0
   m_Name: sitting_boy (4)
   m_TagString: Untagged
@@ -13849,6 +14075,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1547439286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547439283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 291d3c66c8d2d0249bb411c8289ec437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_speedRange: {x: 1, y: 5}
+  m_amplitudeRange: {x: 0, y: 10}
 --- !u!4 &1556628561 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6284369417353294073, guid: dbe0abbf7cd14dc4e8ecdaa6b213b603, type: 3}
@@ -13869,6 +14109,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1559488374}
   - component: {fileID: 1559488375}
+  - component: {fileID: 1559488376}
   m_Layer: 0
   m_Name: sitting_boy (7)
   m_TagString: Untagged
@@ -13943,6 +14184,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1559488376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559488373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 291d3c66c8d2d0249bb411c8289ec437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_speedRange: {x: 1, y: 5}
+  m_amplitudeRange: {x: 0, y: 10}
 --- !u!4 &1567677188 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6284369417353294073, guid: dbe0abbf7cd14dc4e8ecdaa6b213b603, type: 3}
@@ -13963,6 +14218,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1578850842}
   - component: {fileID: 1578850843}
+  - component: {fileID: 1578850844}
   m_Layer: 0
   m_Name: sitting_boy (5)
   m_TagString: Untagged
@@ -14037,6 +14293,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1578850844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578850841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 291d3c66c8d2d0249bb411c8289ec437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_speedRange: {x: 1, y: 5}
+  m_amplitudeRange: {x: 0, y: 10}
 --- !u!1 &1581063341
 GameObject:
   m_ObjectHideFlags: 0
@@ -14803,6 +15073,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1732979100}
   - component: {fileID: 1732979101}
+  - component: {fileID: 1732979102}
   m_Layer: 0
   m_Name: sitting_boy (2)
   m_TagString: Untagged
@@ -14877,6 +15148,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1732979102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732979099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 291d3c66c8d2d0249bb411c8289ec437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_speedRange: {x: 1, y: 5}
+  m_amplitudeRange: {x: 0, y: 10}
 --- !u!4 &1743048170 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6284369417353294073, guid: dbe0abbf7cd14dc4e8ecdaa6b213b603, type: 3}
@@ -15616,6 +15901,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1872403166}
   - component: {fileID: 1872403167}
+  - component: {fileID: 1872403168}
   m_Layer: 0
   m_Name: sitting_boy (3)
   m_TagString: Untagged
@@ -15690,6 +15976,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1872403168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872403165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 291d3c66c8d2d0249bb411c8289ec437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_speedRange: {x: 1, y: 5}
+  m_amplitudeRange: {x: 0, y: 10}
 --- !u!4 &1882838442 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6284369417353294073, guid: dbe0abbf7cd14dc4e8ecdaa6b213b603, type: 3}
@@ -15964,6 +16264,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1931276005}
   - component: {fileID: 1931276006}
+  - component: {fileID: 1931276007}
   m_Layer: 0
   m_Name: sitting_girl (8)
   m_TagString: Untagged
@@ -16038,6 +16339,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1931276007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931276004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 291d3c66c8d2d0249bb411c8289ec437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_speedRange: {x: 1, y: 5}
+  m_amplitudeRange: {x: 0, y: 10}
 --- !u!1001 &1953740311
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16554,6 +16869,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2109145433}
   - component: {fileID: 2109145434}
+  - component: {fileID: 2109145435}
   m_Layer: 0
   m_Name: sitting_boy (11)
   m_TagString: Untagged
@@ -16628,6 +16944,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2109145435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2109145432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 291d3c66c8d2d0249bb411c8289ec437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_speedRange: {x: 1, y: 5}
+  m_amplitudeRange: {x: 0, y: 10}
 --- !u!4 &2117118563 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6284369417353294073, guid: dbe0abbf7cd14dc4e8ecdaa6b213b603, type: 3}
@@ -16700,6 +17030,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2128749724}
   - component: {fileID: 2128749725}
+  - component: {fileID: 2128749726}
   m_Layer: 0
   m_Name: sitting_girl (7)
   m_TagString: Untagged
@@ -16774,6 +17105,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2128749726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128749723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 291d3c66c8d2d0249bb411c8289ec437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_speedRange: {x: 1, y: 5}
+  m_amplitudeRange: {x: 0, y: 10}
 --- !u!4 &2143011805 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6284369417353294073, guid: dbe0abbf7cd14dc4e8ecdaa6b213b603, type: 3}
