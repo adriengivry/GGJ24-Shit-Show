@@ -43,17 +43,18 @@ public class EnemySpawner : MonoBehaviour
     {
         for (int i = 0; i < enemiesToSpawn; ++i)
         {
-            yield return new WaitForSeconds(delay);
-            SpawnEnemy();
+            Debug.Assert(m_spawnLocations.Length > 0, "No spawn location found!");
+            Transform targetSpawn = m_spawnLocations[Random.Range(0, m_spawnLocations.Length)].transform;
+            yield return new WaitForSeconds(delay / 2.0f);
+            targetSpawn.GetComponent<SpriteAnimation>()?.Animate(); // Try to animate the spawn if there is a SpriteAnimation component
+            yield return new WaitForSeconds(delay / 2.0f);
+            SpawnEnemy(targetSpawn.position);
         }
     }
 
-    private void SpawnEnemy()
+    private void SpawnEnemy(Vector3 position)
     {
-        Debug.Assert(m_spawnLocations.Length > 0, "No spawn location found!");
-        Transform targetSpawn = m_spawnLocations[Random.Range(0, m_spawnLocations.Length)].transform;
-        Transform instance = Instantiate(m_enemyPrefab.transform, targetSpawn.position, Quaternion.identity);
-        // TODO: set target direction based on a Spawn Location script instance.gameObject.GetComponent<Character>().SetTargetDirection(EMovementDirection)
+        Instantiate(m_enemyPrefab.transform, position, Quaternion.identity);
         ++m_enemyCount;
     }
 }
