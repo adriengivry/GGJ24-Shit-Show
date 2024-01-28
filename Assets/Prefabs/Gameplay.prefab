@@ -3193,8 +3193,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_timeScale: 1
   m_fillSpeedRange: {x: 2, y: 3}
-  m_throwingStrength: 20
-  m_marginOfError: 0.2
+  m_throwingStrength: 30
+  m_marginOfError: 0.15
   m_throwDestination: {fileID: 8825317351999424439}
   m_missedThrowLocations:
   - {fileID: 1256502130280530181}
